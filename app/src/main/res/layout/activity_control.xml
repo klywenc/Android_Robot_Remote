@@ -1,0 +1,338 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:background="#333">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <!-- Lewy panel 3x3 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sterowanie jazdą"
+                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:padding="4dp"/>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rowCount="3"
+                android:columnCount="3"
+                android:padding="2dp">
+
+                <Button
+                    android:id="@+id/forwardButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:text="↑"
+                    android:textSize="16sp"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:id="@+id/backwardButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:text="↓"
+                    android:textSize="16sp"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:id="@+id/leftButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:text="←"
+                    android:textSize="16sp"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:id="@+id/rightButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:text="→"
+                    android:textSize="16sp"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:id="@+id/dynamicLeftButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:text="↖"
+                    android:textSize="16sp"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:id="@+id/dynamicRightButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:text="↗"
+                    android:textSize="16sp"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:id="@+id/dynamicLeftBackButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:text="↙"
+                    android:textSize="16sp"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:id="@+id/dynamicRightBackButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_row="2"
+                    android:layout_column="2"
+                    android:text="↘"
+                    android:textSize="16sp"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:id="@+id/stopButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:text="■"
+                    android:textSize="16sp"
+                    android:layout_margin="2dp"/>
+            </GridLayout>
+        </LinearLayout>
+
+        <!-- Panel wieżyczki 3x3 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sterowanie wieżą"
+                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:padding="4dp"/>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rowCount="3"
+                android:columnCount="3"
+                android:padding="2dp">
+
+                <Button
+                    android:id="@+id/towerUpLeftButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:text="↖"
+                    android:textSize="16sp"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:id="@+id/towerUpButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:text="↑"
+                    android:textSize="16sp"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:id="@+id/towerUpRightButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:text="↗"
+                    android:textSize="16sp"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:id="@+id/towerLeftButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:text="←"
+                    android:textSize="16sp"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:id="@+id/towerHomeButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:text="■"
+                    android:textSize="16sp"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:id="@+id/towerRightButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:text="→"
+                    android:textSize="16sp"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:id="@+id/towerDownLeftButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:text="↙"
+                    android:textSize="16sp"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:id="@+id/towerDownButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:text="↓"
+                    android:textSize="16sp"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:id="@+id/towerDownRightButton"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_row="2"
+                    android:layout_column="2"
+                    android:text="↘"
+                    android:textSize="16sp"
+                    android:layout_margin="2dp"/>
+            </GridLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Panel na dolnym skraju - tryby pracy i biegi -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biegi i tryby"
+            android:textColor="#FFF"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:padding="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="2dp">
+
+            <Button
+                android:id="@+id/mode0Button"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:text="0"
+                android:textSize="12sp"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:id="@+id/mode1Button"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:text="1"
+                android:textSize="12sp"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:id="@+id/mode2Button"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:text="2"
+                android:textSize="12sp"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:id="@+id/mode3Button"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:text="3"
+                android:textSize="12sp"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:id="@+id/gear6Button"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:text="P"
+                android:textSize="12sp"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:id="@+id/gear7Button"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:text="M"
+                android:textSize="12sp"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:id="@+id/gear8Button"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:text="F"
+                android:textSize="12sp"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:id="@+id/gear9Button"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:text="T"
+                android:textSize="12sp"
+                android:layout_margin="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
